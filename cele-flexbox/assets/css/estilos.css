@@ -1,0 +1,48 @@
+/*ESTILO DE FORMULA FLEX*/
+.content-form{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.field, .field-area{
+    margin: 0 3px 3px 0;
+    padding: 3px 2px;
+    border: 2px solid #252525;
+}
+
+.field{
+    flex: 1 0 40%;
+    width: 45%;
+    float: left;
+}
+
+.field-area{
+    flex: 1 0 90%;
+    width: 90%;
+}
+
+.btn-form{
+    padding: 3px;
+    background-color:  rgb(21, 21, 122);
+    color: white;
+}
+
+/*ESTILO DE CARTAS POKEMON*/
+.pokemon-container{
+    background-color: rgb(202, 135, 123);
+    padding: 50px 30px;
+}
+
+.pokemon-container h1{
+    text-align: center;
+    color: whitesmoke;
+    margin: 0 0 20px 0;
+}
+
+.flex-parent{
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
