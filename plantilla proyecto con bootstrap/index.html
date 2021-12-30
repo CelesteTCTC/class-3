@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <title>¡Bienvenido a Crack The Code</title>
+  </head>
+  <body>
+    <h1 class="text-dark mb-4 text-center">¡Hola Cracker!</h1>
+    <button type="button" class="btn btn-danger p-3 ms-5">Click aquí</button>
+    <p class="display-6">hola 2</p>
+
+    <form class="mx-5">
+
+      <div class="my-5">
+        <label class="form-label" for="mail">Ingresa tu correo o usuario</label>
+        <input class="form-control" id="mail" type="email">
+      </div>
+
+      <div class="my-5">
+        <label class="form-label" for="pass">Ingresa tu contraseña</label>
+        <input class="form-control" id="pass" type="password">
+      </div>
+    
+      <button type="submit" class="btn btn-primary p-2">Ingresar</button>
+
+    </form>
+     <br>
+
+  <!--Acordion con bootstrap-->
+  <div class="accordion-m-3 " id="container-acordion">
+     <!--Acordion 1--> 
+    <div class="accordion-item">     
+      <!--Cabecera de acordion-->
+      <h2 class="accordion-header" id="headerItem1">
+       <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#bodyAcordion1">Primer acordion</button>
+      </h2>
+      <!--Descripcion o contenido del acordion-->          
+      <div id="bodyAcordion1" class="accordion-collapse collapse" data-bs-parent="#container-acordion">
+        <div class="accordion-body">
+         <p>Este es el contenido del primer acordion.</p>
+        </div>
+      </div>
+    </div>
+
+      <!--Acordion 2--> 
+    <div class="accordion-item">     
+      <!--Cabecera de acordion-->
+      <h2 class="accordion-header" id="headerItem2">
+       <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#bodyAcordion2">Segundo acordion</button>
+      </h2>
+      <!--Descripcion o contenido del acordion-->          
+      <div id="bodyAcordion2" class="accordion-collapse collapse" data-bs-parent="#container-acordion">
+        <div class="accordion-body">
+         <p>Este es el contenido del segundo acordion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!--Cards-->
+    <div class="card mb-5 ms-5" style="width: 18rem;">
+      <img src="imagenes/nueva-beta-de-bootstrap-4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Logo de Bootstrap</h5>
+        <p class="card-text">Este el el logo de uno de los frameworks mas usados para estilos en diseño web.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <!--Carurel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/32712.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/c48c3ec1b9e6d3af3fb2b5de1a3f8bf2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/wp6400060-scaled.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Opciones</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Carrusel</a></li>
+                <li><a class="dropdown-item" href="#">Alerts</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Accordion</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disponible</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Ingresar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Ingresar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--Tabas o Pestañas-->
+
+    <!--Popovers-->
+    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Titulo de popover" data-bs-content="Esto es un mensaje del popover">Show Popover
+    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+     Show Popover
+    </button>
+
+    <!--Borders-->
+    <div class="border border-success border-2 rounded-circle m-3" style="width: 100px; height: 100px;"></div>
+
+    <!--Shadowa-->
+    <div class="shadow-lg p-3 mb-5 bg-body rounded">Este es un div con sombra</div>
+
+     <!--Grillas con Bootstrap-->
+     <div class="container my-5">
+       <div class="row">
+         <div class="col-sm col-lg-3 border border-3 border-danger">Columna 1</div>
+         <div class="col-sm col-lg-3 border border-3 border-danger">Columna 2</div>
+         <div class="col-sm col-lg-3 border border-3 border-danger">Columna 3</div>
+         <div class="col-sm col-lg-3 border border-3 border-danger">Columna 4</div>
+       </div>
+     </div>
+
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+     })
+     var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+  container: 'body'
+})
+    </script>
+  </body>
+</html>
